@@ -1,0 +1,87 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 16px;
+  gap: 24px;
+  border-radius: 8px;
+  /* justify-content: space-between; */
+}
+
+.card-img-wrap {
+  overflow: hidden;
+  height: 200px;
+}
+
+.card-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s;
+}
+
+.card:hover img {
+  transform: rotate(10deg) scale(1.3);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-text {
+  font-size: 14px;
+}
+
+.cart-button {
+  background: #e64a33;
+  color: #fff;
+  font-family: inherit;
+  border-radius: 8px;
+  transition: all 0.2s;
+  margin-top: auto;
+}
+
+.cart-button:hover {
+  background: #e93216;
+  transform: scale(1.02);
+}
+
+.cart-button:active {
+  transform: scale(1);
+}
+
+.cart-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.cart-action {
+  border: none;
+  padding: 8px 12px;
+  background: #e64a33;
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 24px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1);
+  transition: all 0.2s;
+}
+
+.cart-action:active {
+  transform: scale(0.9);
+}
+
+.increment {
+  background: green;
+}

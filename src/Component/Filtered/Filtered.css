@@ -1,0 +1,35 @@
+.filter {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background: #fff;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.filter-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-input {
+  padding: 12px 8px;
+  border-radius: 8px;
+  border: none;
+  background: #ddd;
+  font-family: inherit;
+}
+
+.input-chip {
+  display: flex;
+  gap: 8px;
+}
+
+input[type="checkbox"] {
+  background-color: #e93216;
+}
+
+label {
+  font-size: 14px;
+}
