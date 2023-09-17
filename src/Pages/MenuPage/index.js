@@ -17,7 +17,7 @@ function MenuPage() {
           <h3 className="menu-head">MENU</h3>
           {isLoading ? (
             <div className="loading">
-              <img src={Loading} />
+              <img src={Loading} alt="loading"/>
             </div>
           ) : filteredList.length > 0 ? (
             <ul className="menu-list">
@@ -27,7 +27,7 @@ function MenuPage() {
             </ul>
           ) : (
             <div className="not-found">
-              <img src={NoData} />
+              <img src={NoData} alt="noData"/>
               <h3>Data Not Available</h3>
             </div>
           )}

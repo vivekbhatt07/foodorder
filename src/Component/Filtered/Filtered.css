@@ -11,7 +11,25 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
+@media (max-width: 688px) {
+  input{
+    margin-top: 5px;
+  }
+  #ascend-sort{
+    margin-top: 5px;
+  }
+  .lowToHigh{
+    margin-top: 5px;
+  }
+  #descend-sort{
+    margin-top: 5px;
+  }
+  .highToLow{
+    margin-top: 5px;
+  }
+ }
 
 .text-input {
   padding: 12px 8px;

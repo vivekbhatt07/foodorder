@@ -25,7 +25,7 @@ function Filtered() {
 
   useEffect(() => {
     updateFilterList(filters);
-  }, [filters, menuList]);
+  }, [filters, menuList, updateFilterList]);
 
   return (
     <div className="filter">
@@ -68,7 +68,7 @@ function Filtered() {
             checked={filters.sortOrder === "lowToHigh"}
             onChange={handleChange}
           />
-          <label htmlFor="ascend-sort">Sort (price) Low to High</label>
+          <label htmlFor="ascend-sort" className="lowToHigh">Sort (price) Low to High</label>
         </div>
         <div className="input-chip">
           <input
@@ -79,7 +79,7 @@ function Filtered() {
             checked={filters.sortOrder === "highToLow"}
             onChange={handleChange}
           />
-          <label htmlFor="descend-sort">Sort (price) High to Low</label>
+          <label htmlFor="descend-sort" className="highToLow">Sort (price) High to Low</label>
         </div>
       </div>
     </div>

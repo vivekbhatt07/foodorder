@@ -23,11 +23,10 @@
   text-align: center;
   color: #fff;
 }
-
 .menu-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, 300px);
-  justify-content: flex-start;
+  justify-content: center;
   row-gap: 32px;
   width: 100%;
   column-gap: 50px;

@@ -14,14 +14,14 @@ function CartContextProvider({ children }) {
       }
 
       return prevCartList.reduce((updatedList, currentCart, index) => {
-        if (currentCart.id == getCart.id) {
+        if (currentCart.id === getCart.id) {
           return [
             ...updatedList,
             { ...currentCart, cartCount: currentCart.cartCount + 1 },
           ];
         } else {
-          if (prevCartList.length == index + 1) {
-            if (prevCartList.every((current) => !(current.id == getCart.id))) {
+          if (prevCartList.length === index + 1) {
+            if (prevCartList.every((current) => !(current.id === getCart.id))) {
               return [
                 ...updatedList,
                 currentCart,
