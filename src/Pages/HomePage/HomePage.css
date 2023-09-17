@@ -16,12 +16,32 @@
   flex-direction: column;
 }
 
-.page-head {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  align-items: flex-start;
-}
+@media (min-width: 768px) { 
+  .page-head {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: flex-start;
+    backdrop-filter: blur(3px);
+    width: 50%;
+    padding: 12px;
+    border-radius: 20px;
+  }
+ }
+ @media (max-width: 768px) { 
+  .page-head {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: flex-start;
+    backdrop-filter: blur(8px);
+    width: 100%;
+    padding: 12px;
+    border-radius: 20px;
+  }
+ }
+
+
 
 .home-button {
   background: #e64a33;

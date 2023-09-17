@@ -10,8 +10,6 @@ function Card(props) {
     description,
     price,
     image,
-    is_vegetarian,
-    is_spicy,
     delivery_time,
     isMenu,
     isCart,
